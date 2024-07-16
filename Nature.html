@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Nature page</title>
+   <link rel="stylesheet"  href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/fontawesome.css">
+  </head>
+  <body>
+
+<section class="sub-header">
+       <nav>
+			<a href="index.html">
+				<div class="nav-links" id="navlinks">
+					
+				     <ul>
+						<li><a href="index.html" target="_blank">HOME</a></li>
+						<li><a href="Nature.html">NATURE</a></li>
+		           	    <li><a href="Artistic.html">ARTISTIC</a></li>
+						<li><a href="Fashion.html">FASHION</a></li>
+					  </ul>
+				</div>
+					
+	    </nav>
+	    <h1>world Nature</h1>
+   </section>
+   <section class="pictures">
+<div class="row">
+	<div class="pictures-col">
+		<img src="imagess/barcelona.jpg">
+		<div class="layer">
+			<h3>barcelona</h3>
+		</div>
+	</div>
+
+<div class="pictures-col">
+		<img src="imagess/Italy.jpg">
+		<div class="layer">
+			<h3>Italy</h3>
+		</div>
+	</div>
+
+<div class="pictures-col">
+		<img src="imagess/lebanon.jpg">
+		<div class="layer">
+			<h3>lebanon</h3>
+		</div>
+	</div>
+
+</div>
+</section>
+<section class="pictures">
+<div class="row">
+	<div class="pictures-col">
+		<img src="imagess/canada.jpg">
+		<div class="layer">
+			<h3>canada</h3>
+		</div>
+	</div>
+
+<div class="pictures-col">
+		<img src="imagess/denmark.jpg">
+		<div class="layer">
+			<h3>denmark</h3>
+		</div>
+	</div>
+
+<div class="pictures-col">
+		<img src="imagess/germany.jpg">
+		<div class="layer">
+			<h3>germany</h3>
+		</div>
+	</div>
+
+</div>
+</section>
+<section class="facilities">
+	<h1>Nature Facilities</h1>
+	<div class="row">
+		<div class="facilities-col">
+			<img src="imagess/trails2.jpg">
+			<h3>trails and pathways</h3>
+			<p>Well-maintained trails and pathways allow visitors to explore natural areas while minimizing impact on the environment.
+			   They can be designed for hiking, walking, cycling,
+			   or horseback riding, and may include signage to provide information about the surroundings.</p>	
+		</div>
+		<div class="facilities-col">
+			<img src="imagess/visitor1.jpg">
+			<h3>visitor centers</h3>
+			<p>Visitor centers serve as information hubs where visitors can obtain maps, brochures, and guidance on the natural area. 
+			   They often have exhibits, audiovisual presentations,
+			   and knowledgeable staff who provide educational resources and interpretation of the natural features, flora, and fauna.</p>	
+		</div>
+		<div class="facilities-col">
+			<img src="imagess/picnic.jpg">
+			<h3>Picnic Areas and Restrooms</h3>
+			<p>Picnic areas provide spaces for visitors to relax, have meals, and enjoy nature. 
+			   These areas typically include picnic tables, barbecue grills, 
+			   and waste disposal facilities. Accessible and well-maintained restrooms are essential to ensure visitor comfort and hygiene..</p>	
+	   </div>
+   </div>
+</section>
+<section class="Share-us">
+	<div class="row">
+		<div class="copy-link">
+			<h1>Share this page with your family and friends</h1>
+			<input type="text" class="copy-link-input" value="nature.html" readonly>
+			<button type="button" class="hero-btn red-btn copy-link-button">
+				<span>copy link</span> 
+			  	</button>
+		  </div>
+		  <div class="Share-col">
+				<img src="imagess/about.jpg">
+		  </div>
+	</div>
+  </section>
+<!---javascript copy link--->
+<script>
+document.querySelectorAll(".copy-link").forEach((copyLinkParent) => {
+  const inputField = copyLinkParent.querySelector(".copy-link-input");
+  const copyButton = copyLinkParent.querySelector(".copy-link-button");
+  const text = inputField.value;
+
+  inputField.addEventListener("focus", () => inputField.select());
+
+  copyButton.addEventListener("click", () => {
+    inputField.select();
+    navigator.clipboard.writeText(text);
+
+    inputField.value = "Copied!";
+    setTimeout(() => (inputField.value = text), 2000);
+  });
+});
+
+  </script>
+</body>
+</html>

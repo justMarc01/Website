@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Artistic page</title>
+   <link rel="stylesheet"  href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/fontawesome.css">
+  </head>
+  <body>
+
+<section class="sub-header">
+       <nav>
+			<a href="index.html">
+				<div class="nav-links" id="navlinks">
+					
+				     <ul>
+						<li><a href="index.html" target="_blank">HOME</a></li>
+						<li><a href="Nature.html">NATURE</a></li>
+		           	    <li><a href="Artistic.html">ARTISTIC</a></li>
+						<li><a href="Fashion.html">FASHION</a></li>
+						
+					  </ul>
+				</div>
+					
+	    </nav>
+	    <h1> world Art</h1>
+   </section>
+   <section class="pictures">
+	<div class="row">
+		<div class="pictures-col">
+			<img src="imagess/realism.jpg">
+			<div class="layer">
+				<h3>realism</h3>
+			</div>
+		</div>
+	
+	<div class="pictures-col">
+			<img src="imagess/impressionist.jpg">
+			<div class="layer">
+				<h3>impressionist</h3>
+			</div>
+		</div>
+	
+	<div class="pictures-col">
+			<img src="imagess/expressionist.jpg">
+			<div class="layer">
+				<h3>expressionist</h3>
+			</div>
+		</div>
+	
+	</div>
+	</section>
+	<section class="pictures">
+	<div class="row">
+		<div class="pictures-col">
+			<img src="imagess/popart.jpg">
+			<div class="layer">
+				<h3>PopArt</h3>
+			</div>
+		</div>
+	
+	<div class="pictures-col">
+			<img src="imagess/surrealism.jpg">
+			<div class="layer">
+				<h3>surrealism</h3>
+			</div>
+		</div>
+	
+	<div class="pictures-col">
+			<img src="imagess/abstract.jpg">
+			<div class="layer">
+				<h3>abstract</h3>
+			</div>
+		</div>
+</div>	
+</section>
+<section class="facilities">
+	<h1>Art Facilities</h1>
+	<div class="row">
+		<div class="facilities-col">
+			<img src="imagess/artstudios.jpg">
+			<h3>Art studios</h3>
+			<p>Art studios are dedicated spaces equipped with materials and tools specific to different art forms,
+			   such as painting, sculpture, ceramics, printmaking, or photography. 
+			   They provide artists with a conducive environment to work, experiment, and develop their artistic practice.
+			   </p>	
+		</div>
+		<div class="facilities-col">
+			<img src="imagess/artresidencies.jpg">
+			<h3>Artist residencies</h3>
+			<p>Artist residencies offer dedicated time and space for artists to live and work in a supportive community.
+			   These facilities often provide studio spaces, accommodation, 
+			   and sometimes funding or stipends for artists to focus on their creative projects without distractions.</p>	
+		</div>
+		<div class="facilities-col">
+			<img src="imagess/performance.jpg">
+			<h3>Performance Spaces</h3>
+			<p>These facilities cater to performing arts, including theaters, concert halls, dance studios, and rehearsal spaces.
+				 They provide stages, sound systems,lighting setups, and seating arrangements to accommodate live performances,
+				 rehearsals, and workshops.</p>	
+	   </div>
+   </div>
+</section>
+<!---------------about us content-------->
+<section class="Share-us">
+	<div class="row">
+		<div class="copy-link">
+			<h1>Share this page with your family and friends</h1>
+			<input type="text" class="copy-link-input" value="Artistic.html" readonly>
+			<button type="button" class="hero-btn red-btn copy-link-button">
+				<span>copy link</span> 
+			  	</button>
+		  </div>
+		  <div class="Share-col">
+				<img src="imagess/about.jpg">
+		  </div>
+	</div>
+  </section>
+
+<!---javascript copy link--->
+<script>
+	document.querySelectorAll(".copy-link").forEach((copyLinkParent) => {
+	  const inputField = copyLinkParent.querySelector(".copy-link-input");
+	  const copyButton = copyLinkParent.querySelector(".copy-link-button");
+	  const text = inputField.value;
+	
+	  inputField.addEventListener("focus", () => inputField.select());
+	
+	  copyButton.addEventListener("click", () => {
+		inputField.select();
+		navigator.clipboard.writeText(text);
+	
+		inputField.value = "Copied!";
+		setTimeout(() => (inputField.value = text), 2000);
+	  });
+	});
+	
+	  </script>
+</body>
+</html>

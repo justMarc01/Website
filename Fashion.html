@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Fashion page</title>
+   <link rel="stylesheet"  href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/fontawesome.css">
+  </head>
+  <body>
+
+<section class="sub-header">
+       <nav>
+			<a href="index.html">
+				<div class="nav-links" id="navlinks">
+					
+				     <ul>
+						<li><a href="index.html" target="_blank">HOME</a></li>
+						<li><a href="Nature.html">NATURE</a></li>
+		           	    <li><a href="Artistic.html">ARTISTIC</a></li>
+						<li><a href="Fashion.html">FASHION</a></li>
+						
+					  </ul>
+				</div>
+					
+	    </nav>
+	    <h1> world fashion</h1>
+   </section>
+   <section class="pictures">
+	<div class="row">
+		<div class="pictures-col">
+			<img src="imagess/punk.jpg">
+			<div class="layer">
+				<h3>punk</h3>
+			</div>
+		</div>
+	
+	<div class="pictures-col">
+		
+			<img src="imagess/vintage.jpg">
+			<div class="layer">
+				<h3>vintage</h3>
+			</div>
+		</div>
+	
+	<div class="pictures-col">
+	
+			<img src="imagess/grunge.jpg">
+			<div class="layer">
+				<h3>grunge</h3>
+			</div>
+		</div>
+	
+	</div>
+	</section>
+	<section class="pictures">
+	<div class="row">
+		<div class="pictures-col">
+			<img src="imagess/gothic.pgj.JPG">
+			<div class="layer">
+				<h3>gothic</h3>
+			</div>
+		</div>
+	
+	<div class="pictures-col">
+		
+			<img src="imagess/streatwear.jpg">
+			<div class="layer">
+				<h3>streetwear</h3>
+			</div>
+		</div>
+	
+	<div class="pictures-col">
+		
+			<img src="imagess/casual.jpg">
+			<div class="layer">
+				<h3>casual</h3>
+			</div>
+		</div>
+</div>	
+</section>
+<section class="facilities">
+	<h1>Fashion Facilities</h1>
+	<div class="row">
+		<div class="facilities-col">
+			<img src="imagess/showrooms.jpg">
+			<h3>Show rooms</h3>
+			<p>Showrooms are spaces where fashion brands or designers display their collections to buyers, press, and industry professionals.
+			   These facilities are designed to create a visually appealing environment that highlights the clothing and accessories.
+			   Showrooms often have fitting rooms, display racks, and appropriate lighting to showcase the garments effectively. </p>	
+		</div>
+		<div class="facilities-col">
+			<img src="imagess/garment.jpg">
+			<h3>Garment Production Facilities</h3>
+			<p>These facilities include factories or workshops equipped with specialized equipment and machinery for garment production. 
+			   They have cutting tables, sewing machines, pressing stations, 
+			   and quality control areas to facilitate the efficient and precise manufacturing of clothing.</p>	
+		</div>
+		<div class="facilities-col">
+			<img src="imagess/fashiondesign.jpg">
+			<h3>Design Studios</h3>
+			<p>Fashion design studios are creative workspaces where designers conceptualize and develop their collections.
+			    These studios are equipped with design tools, pattern-making equipment, sewing machines, and workstations. 
+				They provide a conducive environment for designers to sketch, drape, experiment with fabrics, and create prototypes.</p>	
+	   </div>
+   </div>
+</section>
+<!---------------about us content-------->
+<section class="Share-us">
+	<div class="row">
+		<div class="copy-link">
+			<h1>Share this page with your family and friends</h1>
+			<input type="text" class="copy-link-input" value="Fashion.html" readonly>
+			<button type="button" class="hero-btn red-btn copy-link-button">
+				<span>copy link</span> 
+			  	</button>
+		  </div>
+		  <div class="Share-col">
+				<img src="imagess/about.jpg">
+		  </div>
+	</div>
+  </section>
+<!---javascript copy link--->
+<script>
+	document.querySelectorAll(".copy-link").forEach((copyLinkParent) => {
+	  const inputField = copyLinkParent.querySelector(".copy-link-input");
+	  const copyButton = copyLinkParent.querySelector(".copy-link-button");
+	  const text = inputField.value;
+	
+	  inputField.addEventListener("focus", () => inputField.select());
+	
+	  copyButton.addEventListener("click", () => {
+		inputField.select();
+		navigator.clipboard.writeText(text);
+	
+		inputField.value = "Copied!";
+		setTimeout(() => (inputField.value = text), 2000);
+	  });
+	});
+	
+	  </script>
+</body>
+</html>
